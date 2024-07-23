@@ -1,0 +1,78 @@
+@use '../utility/_index' as utility;
+
+header {
+    padding: 3.75rem 2rem 3.75rem 2rem;
+    @include utility.tablet {
+        justify-content: flex-start;
+        padding: 3.75rem 0 3.75rem 2.438rem;
+    } 
+
+    @include utility.desktop {
+        padding: 6.25rem 0 6.25rem 10rem;
+    }
+}
+
+main {
+    margin: 0 1.5rem;
+    @include utility.tablet {
+        margin: 5.5rem 5.875rem 0 2.438rem;
+    }
+
+    @include utility.desktop {
+        margin: 0rem 5rem 0 10rem;
+        width: 50%;
+        padding-bottom: 10rem;
+    }
+}
+
+.hero {
+    h1 {
+        padding-bottom: 1.5rem;
+        @include utility.tablet {
+            padding-bottom: 3rem;
+            padding-top: 5.625rem;
+        }
+    }
+    p {
+        padding-bottom: 1.875rem;
+        @include utility.tablet {
+            width: 70%;
+        }
+
+        @include utility.desktop {
+            width: 55%;
+        }
+    }
+}
+
+.hero__content {
+    @include utility.tablet {
+        display: flex;
+        flex-direction: column-reverse ;
+    }
+}
+
+.company__logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2.813rem;
+    @include utility.tablet {
+        justify-content: unset;
+        gap: 3.5rem;
+    }
+    @include utility.desktop {
+        justify-content: flex-start;
+        gap: 2rem;
+        padding-bottom: 0;
+    }
+}
+
+.form {
+    @include utility.tablet {
+        padding-bottom: 3.75rem;
+    }
+    @include utility.desktop {
+        padding-bottom: 2.625rem;
+    }
+}

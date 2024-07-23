@@ -1,0 +1,46 @@
+@use '../utility/_index' as utility;
+
+.form {
+    form {
+        @include utility.tablet {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
+.form-group {
+    padding-bottom: 1rem;
+    @include utility.tablet {
+        width: 70%;
+        position: relative;
+    }
+    input {
+        width: 100%;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        border: none;
+        background-color: utility.$darkGray;
+        @include utility.tablet {
+            width: 80%;
+        }
+        @include utility.desktop {
+            width: 75%;
+        }
+    
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }    
+}
+
+.invisible {
+    display: none;
+}
+
+.error-message {
+    margin-right: 5.5rem;;
+    margin-left: 2rem;
+    padding-top: 0.5rem;
+}

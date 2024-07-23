@@ -1,0 +1,65 @@
+@use '../utility/_index' as utility;
+
+main {
+    text-align: center;
+    @include utility.tablet {
+        text-align: left;
+    }
+}
+
+.hero {
+    h1 {
+        color: utility.$green;
+        font-size: 1.5625rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        line-height: 2.375rem;
+        text-wrap: unset;
+        @include utility.tablet {
+            font-size: 3rem;
+            font-weight: 200;
+            line-height: 3.5rem;
+        }
+
+        @include utility.desktop {
+            font-size: 3.25rem;
+            line-height: 3.875rem;
+        }
+        span {
+            color: utility.$white;
+        } 
+    }    
+    
+    p {
+        color: utility.$lightGray;
+        font-size: 0.938rem;
+        font-weight: 200;
+        @include utility.tablet {
+            font-size: 1.125rem;
+        }
+
+        @include utility.desktop {
+            line-height: 1.75rem;
+        }
+    }
+}
+
+.request-button {
+    color: utility.$black;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.form-group {
+    input {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: utility.$white;
+    }
+}
+
+.error-message {
+    color: utility.$red;
+    font-size: .75rem;
+}

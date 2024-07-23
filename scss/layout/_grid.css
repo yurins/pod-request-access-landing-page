@@ -1,0 +1,25 @@
+@use '../utility/_index' as utility;
+header {
+  display: flex;
+  justify-content: center;
+  padding: 3.75rem 0;
+}
+
+main {
+  margin: 0 1.5rem;
+}
+
+.hero h1 {
+  padding-bottom: 1.5rem;
+}
+
+.hero p {
+  padding-bottom: 1.875rem;
+}
+
+.company__logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2.813rem;
+}

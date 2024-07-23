@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="images/desktop/logo.svg" alt="podcast logo">
+    </a>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>Publish your podcasts <span>everywhere.</span></h1>
+        <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+           Apple Podcasts, Google Podcasts, Pocket Casts and more!
+        </p>
+    </div>
+    <div class="hero__content">
+      <div class="company__logos">
+        <img src="images/desktop/spotify.svg" alt="spotify logo">
+        <img src="images/desktop/apple-podcast.svg" alt="apple podcast logo">
+        <img src="images/desktop/google-podcasts.svg" alt="google podcasts logo">
+        <img src="images/desktop/pocket-casts.svg" alt="pocket casts logo">
+      </div>
+      <div class="form">
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="email" hidden>Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Email address">   
+            <div class="error-message invisible">Oops! Please check your email</div> 
+          </div>  
+          <button type="submit" class="btn request-button">Request access</button>
+        </form>  
+      </div>  
+    </div>  
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
