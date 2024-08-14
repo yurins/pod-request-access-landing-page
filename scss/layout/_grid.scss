@@ -29,7 +29,7 @@ main {
     h1 {
         padding-bottom: 1.5rem;
         @include utility.tablet {
-            padding-bottom: 3rem;
+            padding-bottom: 2.875rem;
             padding-top: 5.625rem;
         }
     }
@@ -40,7 +40,7 @@ main {
         }
 
         @include utility.desktop {
-            width: 55%;
+            width: 62%;
         }
     }
 }

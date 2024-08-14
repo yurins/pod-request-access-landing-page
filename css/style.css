@@ -321,7 +321,7 @@ main {
 }
 @media screen and (min-width: 48rem) {
   .hero h1 {
-    padding-bottom: 3rem;
+    padding-bottom: 2.875rem;
     padding-top: 5.625rem;
   }
 }
@@ -335,7 +335,7 @@ main {
 }
 @media screen and (min-width: 80rem) {
   .hero p {
-    width: 55%;
+    width: 62%;
   }
 }
 
