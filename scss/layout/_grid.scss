@@ -41,6 +41,7 @@ main {
 
         @include utility.desktop {
             width: 62%;
+            padding-bottom: 2.5rem;
         }
     }
 }
@@ -71,8 +72,5 @@ main {
 .form {
     @include utility.tablet {
         padding-bottom: 3.75rem;
-    }
-    @include utility.desktop {
-        padding-bottom: 2.625rem;
     }
 }

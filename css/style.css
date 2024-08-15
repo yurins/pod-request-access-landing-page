@@ -336,6 +336,7 @@ main {
 @media screen and (min-width: 80rem) {
   .hero p {
     width: 62%;
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -369,10 +370,5 @@ main {
 @media screen and (min-width: 48rem) {
   .form {
     padding-bottom: 3.75rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .form {
-    padding-bottom: 2.625rem;
   }
 }/*# sourceMappingURL=style.css.map */
